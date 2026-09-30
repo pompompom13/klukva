@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Клюква Lounge – кальянная у метро Первомайская</title>
+<meta name="description" content="Клюква Lounge: кальяны на премиальном табаке, китайский чай, клюквенный лимонад, приставки и настольные игры. 390 м от м. Первомайская. Пт–сб до 04:00. +7 (917) 517-17-16">
+<meta name="theme-color" content="#1b1a18">
+<meta property="og:title" content="Клюква Lounge – кальянная у Первомайской">
+<meta property="og:description" content="Кальяны, чай, приставки и настолки. Верхняя Первомайская ул., 36с1">
+<meta property="og:image" content="img/k014.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('klukva-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Клюква Lounge",
+  "telephone": "+79175171716",
+  "address": {"@type": "PostalAddress", "streetAddress": "Верхняя Первомайская ул., 36с1", "addressLocality": "Москва", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 55.798606, "longitude": 37.798122},
+  "openingHours": ["Mo-Th 13:00-02:00", "Fr-Sa 13:00-04:00", "Su 13:00-02:00"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "568"}
+}
+</script>
+</head>
+<body>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <img src="img/berries.png" alt="" class="age__berries" width="300" height="280">
+    <div id="ageAsk">
+      <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+      <p class="age__text">На&nbsp;сайте есть информация о&nbsp;кальянах, поэтому он&nbsp;только для взрослых гостей.</p>
+      <div class="age__btns">
+        <button type="button" class="btn btn--red" id="ageYes">Да, мне есть 18</button>
+        <button type="button" class="btn btn--line" id="ageNo">Нет</button>
+      </div>
+    </div>
+    <div id="ageDeny" hidden>
+      <p class="age__title">Будем ждать вас позже</p>
+      <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+    </div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo"><img src="img/berries.png" alt="" width="34" height="32"><span>Клюква<small>lounge</small></span></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a>
+      <a href="#menu">Чай и&nbsp;меню</a>
+      <a href="#play">Игры</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79175171716" class="nav__phone">+7 (917) 517-17-16</a>
+    </nav>
+    <a href="tel:+79175171716" class="btn btn--red btn--sm top__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__media">
+    <img src="img/k023.webp" alt="Зал с живой зелёной стеной и красными бархатными креслами" fetchpriority="high">
+  </div>
+  <div class="wrap hero__in">
+    <p class="status" id="status">м. Первомайская · 390 м</p>
+    <h1 class="hero__logo"><img src="img/logo.png" alt="Клюква Lounge" width="866" height="498"></h1>
+    <p class="hero__lead">Кислинка к&nbsp;вечеру. Густой дым, живая зелень и&nbsp;мастера, которые смешают вкус под настроение.</p>
+    <div class="hero__actions">
+      <a href="tel:+79175171716" class="btn btn--red">Забронировать стол</a>
+      <a href="https://wa.me/79175171716" target="_blank" rel="noopener" class="btn btn--line">Написать в&nbsp;WhatsApp</a>
+    </div>
+    <ul class="hero__facts">
+      <li><b>4,7</b><span>568 оценок на&nbsp;Яндексе</span></li>
+      <li><b>до&nbsp;04:00</b><span>в&nbsp;пятницу и&nbsp;субботу</span></li>
+      <li><b>1&#8239;600&nbsp;₽</b><span>кальян с&nbsp;премиальным табаком</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- DEAL -->
+<section class="deal">
+  <div class="wrap deal__in">
+    <p class="deal__tag">Будни днём</p>
+    <p class="deal__t">С&nbsp;понедельника по&nbsp;пятницу с&nbsp;13:00 до&nbsp;17:00 скидка на&nbsp;всё меню</p>
+    <a href="tel:+79175171716" class="deal__link">Уточнить&nbsp;→</a>
+  </div>
+</section>
+
+<!-- HOOKAH -->
+<section class="hookah" id="hookah">
+  <div class="wrap hookah__grid">
+    <figure class="hookah__pic reveal"><img src="img/k014.webp" alt="Неоновая вывеска Black Burn на живой зелёной стене с кальянами" loading="lazy"></figure>
+    <div>
+      <div class="reveal">
+        <p class="label">Кальяны</p>
+        <h2 class="h2">Мастера <span>дыма</span></h2>
+        <p class="lead">Большая стена табаков, от&nbsp;привычных вкусов до&nbsp;неожиданных миксов. Если нужного нет, мастер соберёт похожий из&nbsp;того, что есть.</p>
+      </div>
+      <div class="bowls">
+        <article class="bowl reveal">
+          <h3>Классика на&nbsp;чаше</h3>
+          <p>Премиальный табак уже в&nbsp;цене.</p>
+          <b>1&#8239;600&nbsp;₽</b>
+        </article>
+        <article class="bowl bowl--fruit reveal">
+          <h3>Классика на&nbsp;фрукте</h3>
+          <p>Чаша из&nbsp;свежего фрукта.</p>
+          <b>2&#8239;200&nbsp;₽</b>
+        </article>
+      </div>
+      <p class="hookah__note reveal">Каждые 20–30 минут кальянщик сам подойдёт проверить кальян и&nbsp;сменить угли.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Чай и&nbsp;меню</p>
+      <h2 class="h2">Клюквенный <span>и&nbsp;не&nbsp;только</span></h2>
+      <p class="lead">Китайские улуны и&nbsp;пуэры, фруктовые чаи и&nbsp;лимонады в&nbsp;больших кувшинах на&nbsp;всю компанию.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Разделы меню">
+      <button role="tab" class="tab is-active" aria-selected="true" data-tab="tea">Чай</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="cold">Лимонады и&nbsp;кофе</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="snack">Снеки и&nbsp;десерты</button>
+    </div>
+    <div class="menu__body" id="menuBody" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- PLAY -->
+<section class="play" id="play">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Чем заняться</p>
+      <h2 class="h2">Сыграть, <span>посмотреть, поработать</span></h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="img/k010.webp" alt="Компания играет в «Монополию» за столом" loading="lazy">
+        <div><h3>Куча настолок</h3><p>От&nbsp;«Монополии» до&nbsp;быстрых партий на&nbsp;двоих.</p></div>
+      </article>
+      <article class="card reveal">
+        <img src="img/k005.webp" alt="Экран с игрой на приставке" loading="lazy">
+        <div><h3>Приставки и&nbsp;матчи</h3><p>Игры с&nbsp;друзьями и&nbsp;спортивные трансляции на&nbsp;экране.</p></div>
+      </article>
+      <article class="card reveal">
+        <img src="img/k018.webp" alt="Уголок с креслами и полками с книгами" loading="lazy">
+        <div><h3>Тихий угол</h3><p>Wi-Fi, зарядка и&nbsp;место для ноутбука. Никто не&nbsp;помешает.</p></div>
+      </article>
+    </div>
+    <ul class="perks">
+      <li class="reveal"><b>С&nbsp;собакой</b>можно, если питомец до&nbsp;35&nbsp;см в&nbsp;холке</li>
+      <li class="reveal"><b>Кнопка вызова</b>персонал придёт по&nbsp;одному нажатию</li>
+      <li class="reveal"><b>Подарочный сертификат</b>вечер в&nbsp;«Клюкве» в&nbsp;подарок</li>
+    </ul>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="gal">
+      <figure class="g g--1 reveal"><img src="img/k021.webp" alt="Кресло, пальма и арт с обезьяной на деревянной панели" loading="lazy"></figure>
+      <figure class="g g--2 reveal"><img src="img/k004.webp" alt="Гости курят кальян" loading="lazy"></figure>
+      <figure class="g g--3 reveal"><img src="img/k003.webp" alt="Зал с красными диванами и деревянными рейками" loading="lazy"></figure>
+      <figure class="g g--5 reveal"><img src="img/k002.webp" alt="Бар со стеной табаков" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <div>
+        <p class="label">Отзывы</p>
+        <h2 class="h2">Хожу <span>не&nbsp;первый год</span></h2>
+      </div>
+      <div class="score"><b>4,7</b><span>★★★★★<br>337 отзывов · 568 оценок<br>на&nbsp;Яндекс Картах</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="q q--big reveal">
+        <blockquote>«Мастера дыма» всегда посоветуют и&nbsp;помогут найти или смешать вкус под настроение. За&nbsp;чем-то новеньким тоже сюда.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 19 октября 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Самые вкусные и&nbsp;дымные кальяны, куча настолок, приставки и&nbsp;кайфовые посиделки с&nbsp;друзьями.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 2 апреля 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Знает своё дело на&nbsp;10/10: даже если каких-то позиций нет, может собрать нечто идентичное из&nbsp;имеющихся табаков.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 23 мая 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Очень приятное место, уже не&nbsp;первый раз была тут. Прекрасный дизайн и&nbsp;вкусный кальян с&nbsp;напитками.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 22 июля</span></figcaption>
+      </figure>
+    </div>
+    <a class="more" href="https://yandex.ru/maps/org/klyukva_lounge/107165886097/reviews/" target="_blank" rel="noopener">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="label">Контакты</p>
+      <h2 class="h2">Ждём <span>у&nbsp;Первомайской</span></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Москва, Верхняя Первомайская ул., 36с1<span class="sub"><i class="metro"></i>Первомайская · 390 м</span></dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79175171716">+7 (917) 517-17-16</a></dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, QR-код</dd></div>
+      </dl>
+      <ul class="week" id="week" aria-label="Часы работы"></ul>
+      <div class="contacts__actions">
+        <a href="tel:+79175171716" class="btn btn--red">Позвонить</a>
+        <a href="https://wa.me/79175171716" target="_blank" rel="noopener" class="btn btn--line">WhatsApp</a>
+        <a href="https://yandex.ru/maps/org/klyukva_lounge/107165886097/" target="_blank" rel="noopener" class="btn btn--line">Маршрут</a>
+      </div>
+      <figure class="find">
+        <img src="img/k030.webp" alt="Вход в Клюква Lounge с вывеской" loading="lazy">
+        <figcaption>Вход со&nbsp;двора, под вывеской <b>Клюква lounge</b> на&nbsp;жёлтом кирпичном здании.</figcaption>
+      </figure>
+    </div>
+    <div class="map reveal">
+      <iframe title="Клюква Lounge на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.798122%2C55.798606&z=16&pt=37.798122%2C55.798606%2Cpm2rdl" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <img src="img/logo.png" alt="Клюква Lounge" class="footer__logo" loading="lazy">
+    <nav class="footer__nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a><a href="#menu">Чай и&nbsp;меню</a><a href="#play">Игры</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer__meta">
+      <a href="tel:+79175171716">+7 (917) 517-17-16</a>
+      <span>Верхняя Первомайская ул., 36с1</span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Клюква Lounge</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является рекламой.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="tel:+79175171716">Позвонить</a>
+  <a href="https://wa.me/79175171716" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="https://yandex.ru/maps/org/klyukva_lounge/107165886097/" target="_blank" rel="noopener">Маршрут</a>
+</div>
+
+<script src="menu.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
